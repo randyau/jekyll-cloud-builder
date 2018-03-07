@@ -1,5 +1,5 @@
 steps:
-    - name: 'gcr.io/cloud-builders/docker'
-      args: [ 'build', '-t', 'eu.gcr.io/$PROJECT_ID/jekyll-cloud-builder', '.' ]
-    images:
-    - 'eu.gcr.io/$PROJECT_ID/jekyll-cloud-builder'
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'eu.gcr.io/$PROJECT_ID/jekyll-cloud-builder', '.' ]
+images:
+- 'eu.gcr.io/$PROJECT_ID/jekyll-cloud-builder'
