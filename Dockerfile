@@ -9,7 +9,6 @@ WORKDIR /workspace
 
 COPY docker-entrypoint.sh /usr/local/bin/
 
-# on every container start we'l'
 ENTRYPOINT [ "docker-entrypoint.sh" ]
 
 CMD [ "bundle", "exec", "jekyll", "build" ]
