@@ -1,4 +1,4 @@
-FROM ruby:2.4-alpine
+FROM ruby:3.0-bullseye
 
 RUN apk add --no-cache build-base gcc bash \
     && gem install jekyll
