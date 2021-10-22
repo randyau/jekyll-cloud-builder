@@ -1,5 +1,7 @@
 # jekyll-cloud-builder
 
+### Personal fork
+
 This docker image will build [Jekyll](https://jekyllrb.com/) sites on the [Google Cloud Builder](https://cloud.google.com/container-builder/docs/) platform.  It can also be used manually to build a Jekyll site using Docker.
 
 ## Manual usage
@@ -14,7 +16,7 @@ The following example builds a static website and uploads it to Google Cloud Sto
 
 ```yaml
 steps:
-- name: gordonmleigh/jekyll-cloud-builder:latest
+- name: randyau/jekyll-cloud-builder:latest
 - name: gcr.io/cloud-builders/gcloud
   entrypoint: gsutil
   args: ["-m", "rsync", "-r", "-c", "-d", "./_site", "gs://example.com"]
