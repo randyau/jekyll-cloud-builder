@@ -7,7 +7,7 @@ This docker image will build [Jekyll](https://jekyllrb.com/) sites on the [Googl
 ## Manual usage
 
 ```bash
-docker run -v "$PWD":/workspace --rm gordonmleigh/jekyll-cloud-builder:latest
+docker run -v "$PWD":/workspace --rm randyau/jekyll-cloud-builder:latest
 ```
 
 ## cloudbuild.yaml
